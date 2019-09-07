@@ -1,0 +1,1 @@
+[Sat Sep  7 14:34:10 2019] [trafficshaper.cpp][line: 65] emulation begin
