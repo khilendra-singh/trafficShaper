@@ -20,7 +20,8 @@ HEADER	= trafficShaperResources.h \
 		  logger.h
 		  
 OUT		= trafficshaper.exe
-LOG 	= trafficshaper.log
+LOG 		= trafficshaper.log \
+		  logger.log
 CC	 	= g++
 FLAGS	= -g -c -Wall
 LFLAGS	= 
@@ -43,7 +44,7 @@ trafficshaper.o: trafficshaper.cpp
 timeCalculator.o: timeCalculator.cpp
 	$(CC) $(FLAGS) timeCalculator.cpp 
 	
-timeCalculator.o: logger.cpp
+logger.o: logger.cpp
 	$(CC) $(FLAGS) logger.cpp 
 
 clean:
